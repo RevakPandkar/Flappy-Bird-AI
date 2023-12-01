@@ -14,7 +14,9 @@ BG_IMG = pygame.transform.scale2x(pygame.image.load('imgs/bg.png'))
 
 pygame.init()
 font = pygame.font.Font('Pixeltype.ttf', 50)
-
+bg_music = pygame.mixer.Sound('music.wav')
+bg_music.set_volume(0.05)
+bg_music.play(loops=-1)
 
 class Bird:
     IMGS = BIRD_IMGS
